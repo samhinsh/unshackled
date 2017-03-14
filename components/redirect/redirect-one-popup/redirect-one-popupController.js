@@ -2,7 +2,7 @@
 
 unshackledApp.controller('RedirectOnePopupController', function($scope, $mdBottomSheet) {
 
-   $scope.listItemClick = function() {
+   $scope.yesButtonClick = function() {
       // var clickedItem = $scope.items[$index];
       $mdBottomSheet.hide('clickedItem');
   };
