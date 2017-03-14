@@ -1,6 +1,6 @@
 'use strict';
 
-var unshackledApp = angular.module('unshackledApp', ['ngMaterial', 'ngRoute', 'ngMessages']);
+var unshackledApp = angular.module('unshackledApp', ['ngRoute', 'ngMaterial']);
 
 unshackledApp.config(['$routeProvider',
     function ($routeProvider) {
