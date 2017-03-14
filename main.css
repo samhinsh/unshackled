@@ -1,3 +1,8 @@
+body {
+    background-image: url("./assets/Checkout.png");
+    background-size: cover;
+}
+
 .fullscreen {
 	width: 1440px;
 	height: 900px;
