@@ -1,0 +1,19 @@
+{
+  "name": "unshackled",
+  "version": "1.0.0",
+  "description": "Stanford CS 247 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samhinsh/unshackled.git"
+  },
+  "author": "Samuel Hinshelwood, Monica Yupa, Elizabeth Davis, Musila Munuve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samhinsh/unshackled/issues"
+  },
+  "homepage": "https://github.com/samhinsh/unshackled#readme"
+}
