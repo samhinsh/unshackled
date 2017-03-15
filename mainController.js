@@ -10,8 +10,12 @@ unshackledApp.config(['$routeProvider',
             controller: 'RedirectOneController'
         }).
         when('/large', {
-            templateUrl: 'components/large/large-sized/largeTemplate.html',
+            templateUrl: 'components/large/large-bg/largeTemplate.html',
             controller: 'LargeController'
+        }).
+        when('/top-banner', {
+            templateUrl: 'components/top-banner/top-banner-bg/topBannerTemplate.html',
+            controller: 'TopBannerController'
         }).
         otherwise({
             redirectTo: '/redirect'
