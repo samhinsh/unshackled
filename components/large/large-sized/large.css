@@ -1,0 +1,9 @@
+body {
+    background-image: url("../../../assets/WalmartHomepage.png");
+    background-size: cover;
+}
+
+.fullscreen {
+	width: 1440px;
+	height: 900px;
+}

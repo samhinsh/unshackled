@@ -9,6 +9,10 @@ unshackledApp.config(['$routeProvider',
             templateUrl: 'components/redirect/redirect-one/redirect-oneTemplate.html',
             controller: 'RedirectOneController'
         }).
+        when('/large', {
+            templateUrl: 'components/large/large-sized/largeTemplate.html',
+            controller: 'LargeController'
+        }).
         otherwise({
             redirectTo: '/redirect'
         });
@@ -17,6 +21,5 @@ unshackledApp.config(['$routeProvider',
 unshackledApp.controller('MainController', ['$scope', '$rootScope',
   function ($scope, $rootScope) {
 
-    
-}]);
 
+}]);
