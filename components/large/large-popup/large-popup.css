@@ -1,7 +1,7 @@
 .large-popup-bg {
     background-image: url("../../../assets/large-popup.png");
     background-size: 100%;
-    background-repeat: no;
+    background-repeat: no-repeat;
     height: 54%;
     width: 50%;
 }
