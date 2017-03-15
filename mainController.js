@@ -25,6 +25,10 @@ unshackledApp.config(['$routeProvider',
             templateUrl: 'components/top-banner/top-banner-bg/topBannerTemplate.html',
             controller: 'TopBannerController'
         }).
+        when('/flyout', {
+            templateUrl: 'components/flyout/flyout/flyoutTemplate.html',
+            controller: 'FlyoutController'
+        }).
         otherwise({
             redirectTo: '/redirect'
         });
