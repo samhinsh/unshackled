@@ -9,6 +9,14 @@ unshackledApp.config(['$routeProvider',
             templateUrl: 'components/redirect/redirect-one/redirect-oneTemplate.html',
             controller: 'RedirectOneController'
         }).
+        when('/redirect-two', {
+            templateUrl: 'components/redirect/redirect-two/redirect-twoTemplate.html',
+            controller: 'RedirectTwoController'
+        }).
+        when('/redirect-three', {
+            templateUrl: 'components/redirect/redirect-three/redirect-threeTemplate.html',
+            controller: 'RedirectThreeController'
+        }).
         when('/large', {
             templateUrl: 'components/large/large-bg/largeTemplate.html',
             controller: 'LargeController'

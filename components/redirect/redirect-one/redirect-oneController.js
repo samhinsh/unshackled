@@ -1,7 +1,7 @@
 'use strict';
 
-unshackledApp.controller('RedirectOneController', ['$scope', '$rootScope', '$timeout', '$mdBottomSheet', '$mdToast',
-  function ($scope, $rootScope, $timeout, $mdBottomSheet, $mdToast) {
+unshackledApp.controller('RedirectOneController', ['$scope', '$rootScope', '$location', '$timeout', '$mdBottomSheet', '$mdToast',
+  function ($scope, $rootScope, $location, $timeout, $mdBottomSheet, $mdToast) {
 
   	$scope.showPopup = function() {
     	$scope.alert = '';
@@ -11,6 +11,7 @@ unshackledApp.controller('RedirectOneController', ['$scope', '$rootScope', '$tim
 	      		controller: 'RedirectOnePopupController'
     		}).then(function(clickedItem) {
       			$scope.alert = clickedItem + ' clicked!';
+            $location.path('/redirect-two');
     		});
         }, 1000);
 
