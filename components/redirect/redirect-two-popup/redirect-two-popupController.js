@@ -3,9 +3,15 @@
 unshackledApp.controller('RedirectTwoPopupController', function($scope, $mdBottomSheet) {
 
    $scope.yesButtonClick = function() {
-      // var clickedItem = $scope.items[$index];
-      console.log('here');
-      $mdBottomSheet.hide('clickedItem');
+      $mdBottomSheet.hide('yes');
+  };
+
+  $scope.noButtonClick = function() {
+      $mdBottomSheet.hide('no');
+  };
+
+  $scope.learnMoreButtonClick = function() {
+      $mdBottomSheet.hide('learn-more');
   };
 
 });

@@ -4,3 +4,24 @@
     background-repeat: no;
     height: 275px;
 }
+
+.redirect-two-popup-yes-button {
+	position: absolute;
+	top: 50px;
+	right: 70px;
+}
+
+.redirect-two-popup-no-button {
+	position: absolute;
+	top: 130px;
+	right: 70px;
+	background-color: black;
+}
+
+.redirect-two-popup-learn-more-button {
+	position: absolute;
+	top: 210px;
+	right: 70px;
+	font-size: 34px;
+	background-color: #919191;
+}

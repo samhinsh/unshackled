@@ -2,9 +2,12 @@
 
 unshackledApp.controller('RedirectThreePopupController', function($scope, $mdBottomSheet) {
 
-   $scope.yesButtonClick = function() {
-      // var clickedItem = $scope.items[$index];
-      $mdBottomSheet.hide('clickedItem');
+   $scope.visitButtonClick = function() {
+      $mdBottomSheet.hide('visit-winco');
+  };
+
+  $scope.donateButtonClick = function() {
+      $mdBottomSheet.hide('donate');
   };
 
 });

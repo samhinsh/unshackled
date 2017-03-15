@@ -7,3 +7,23 @@ body {
 	width: 1440px;
 	height: 900px;
 }
+
+.unshackled-button {
+	width: 236px;
+	height: 66px;
+	color: white;
+	background-color: #9B1725;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	font-family: 'nexa_boldregular';  
+    font-size: 42px; 
+	border-radius: 19px;
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('assets/nexa_free_bold-webfont.woff2') format('woff2'),
+         url('assets/nexa_free_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

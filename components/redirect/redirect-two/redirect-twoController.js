@@ -9,9 +9,8 @@ unshackledApp.controller('RedirectTwoController', ['$scope', '$rootScope', '$loc
             $mdBottomSheet.show({
 	      		templateUrl: 'components/redirect/redirect-two-popup/redirect-two-popupTemplate.html',
 	      		controller: 'RedirectTwoPopupController'
-    		}).then(function(clickedItem) {
-      			$scope.alert = clickedItem + ' clicked!';
-            console.log('here');
+    		}).then(function(action) {
+      			$scope.alert = action + ' clicked!';
             $location.path('/redirect-three');
     		});
         }, 1000);

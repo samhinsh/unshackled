@@ -8,32 +8,12 @@
 .redirect-one-popup-yes-button {
 	position: absolute;
 	top: 40px;
-	right: 20px;
-	width: 120px;
-	color: white;
-	background-color: red;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-	border-radius: 19;
+	right: 70px;
 }
 
 .redirect-one-popup-no-button {
 	position: absolute;
-	top: 80px;
-	right: 20px;
-	width: 120px;
-	color: white;
-	background-color: red;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-	border-radius: 19;
-}
-
-.redirect-one-popup-learn-more-button {
-	position: absolute;
-	top: 140px;
-	right: 20px;
-	width: 120px;
-	color: white;
-	background-color: red;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-	border-radius: 19;
+	top: 120px;
+	right: 70px;
+	background-color: black;
 }
