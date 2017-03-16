@@ -33,6 +33,10 @@ unshackledApp.config(['$routeProvider',
             templateUrl: 'components/flyout/flyout-popup/flyoutPopupTemplate.html',
             controller: 'FlyoutPopupController'
         }).
+        when('/flyout-give', {
+            templateUrl: 'components/flyout/flyout-give/flyoutGiveTemplate.html',
+            controller: 'FlyoutGiveController'
+        }).
         otherwise({
             redirectTo: '/redirect'
         });
