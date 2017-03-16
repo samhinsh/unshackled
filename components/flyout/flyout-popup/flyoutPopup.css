@@ -1,6 +1,21 @@
-.redirect-one-popup-bg {
-    background-image: url("../../../assets/redirect-one-popup-background.png");
+.flyout-popup-bg {
+    background-image: url("../../../assets/flyout-popup.png");
     background-size: 100%;
     background-repeat: no;
-    height: 24%;
+    width: 436px;
+    height: 682px;
+    bottom: 0px;
 }
+
+/*.redirect-one-popup-yes-button {
+	position: absolute;
+	top: 40px;
+	right: 70px;
+}
+
+.redirect-one-popup-no-button {
+	position: absolute;
+	top: 120px;
+	right: 70px;
+	background-color: black;
+}*/
