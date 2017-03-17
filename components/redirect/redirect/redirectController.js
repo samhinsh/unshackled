@@ -12,9 +12,9 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
     		}).then(function() {
             $scope.showSecondPopup();
     		});
-        }, 1000);
-
+      }, 1000);
   	}();
+
 
     $scope.showSecondPopup = function() {
       $scope.alert = '';
@@ -24,11 +24,15 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
             controller: 'RedirectTwoPopupController'
         }).then(function(action) {
             $scope.alert = action + ' clicked!';
-            $scope.showThirdPopup();
+            if (action === 'yes') {
+              $location.path('/top-banner');
+            } else if (action === 'learn-more') {
+              $scope.showThirdPopup();
+            }   
         });
-        }, 1000);
-
+      }, 1000);
     };
+
 
     $scope.showThirdPopup = function() {
       $scope.alert = '';
@@ -38,8 +42,14 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
             controller: 'RedirectThreePopupController'
         }).then(function(action) {
             $scope.alert = action + ' clicked!';
+            if (action === 'visit-winco') {
+              $location.path('/top-banner');
+            } else if (action === 'donate') {
+              
+            }
         });
         }, 1000);
 
     };
   }]);
+
