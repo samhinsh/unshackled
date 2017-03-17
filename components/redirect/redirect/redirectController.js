@@ -3,6 +3,29 @@
 unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$location', '$timeout', '$mdBottomSheet', '$mdToast',
   function ($scope, $rootScope, $location, $timeout, $mdBottomSheet, $mdToast) {
 
+    $scope.showTellYourFriendsToast = function() {
+      var x = document.getElementById("tell-your-friends-toast")
+
+        x.className = "show";
+
+        setTimeout(function(){ 
+        x.className = x.className.replace("show", "");
+        // $scope.showFlyoutButton();
+      }, 3000);
+    };
+
+    $scope.hideFlyoutGivePanel = function() {
+      var flyoutGive = document.getElementById("flyout-panel-give");
+      flyoutGive.className = flyoutGive.className.replace("show", "");
+
+    };
+
+    $scope.flyoutPanelDonateButton2 = function() {
+      console.log("Pressed give's donate button");
+      $scope.hideFlyoutGivePanel();
+      $scope.showTellYourFriendsToast();
+    };
+
   	$scope.showPopup = function() {
     	$scope.alert = '';
     	var wait = $timeout(function() {

@@ -32,12 +32,22 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
       var flyout = document.getElementById("flyout-panel1");
       flyout.className = "show";
 
-    }();
+    };
 
     $scope.hideFlyoutPanel = function() {
       var flyout = document.getElementById("flyout-panel1");
       flyout.className = flyout.className.replace("show", ""); 
 
+    };
+
+    $scope.showFlyoutButton = function() {
+      var flyoutButton = document.getElementById("flyout-button");
+      flyoutButton.className = "show";
+    };
+
+    $scope.hideFlyoutButton = function() {
+      var flyoutButton = document.getElementById("flyout-button");
+      flyoutButton.className = flyoutButton.className.replace("show", "");
     };
 
     $scope.showTellYourFriendsToast = function() {
@@ -47,6 +57,7 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
         setTimeout(function(){ 
         x.className = x.className.replace("show", "");
+        $scope.showFlyoutButton();
       }, 3000);
     };
 
@@ -77,7 +88,16 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
     $scope.flyoutMoreInfoPanelPetitionButton = function() {
       console.log("Pressed more info's petition button");
       $scope.hideFlyoutLargePanel();
+      $scope.showFlyoutButton();
     };
+
+    $scope.flyoutButton = function() {
+      console.log("Pressed the show-flyout button");
+      $scope.showFlyoutPanel();
+      $scope.hideFlyoutButton();
+    };
+
+    $scope.showFlyoutButton();
 
 
   }]);
