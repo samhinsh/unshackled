@@ -58,7 +58,6 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
       }, 3000);
     };
 
-<<<<<<< HEAD
     $scope.showFlyoutPanel = function() {
       var flyout = document.getElementById("flyout-panel1");
       flyout.className = "show";
@@ -68,7 +67,8 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
     $scope.hideFlyoutPanel = function() {
       var flyout = document.getElementById("flyout-panel1");
       flyout.className = flyout.className.replace("show", ""); 
-=======
+    }
+
     $scope.donateDonate = function() {
       var toast = document.getElementById("donate-please-toast");
       toast.className = toast.className.replace("show", "");
@@ -78,7 +78,6 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
     $scope.hideFlyoutGivePanel = function() {
       var flyoutGive = document.getElementById("flyout-panel-give");
       flyoutGive.className = flyoutGive.className.replace("show", "");
->>>>>>> origin/master
 
     };
 
