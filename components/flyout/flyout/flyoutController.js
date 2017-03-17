@@ -53,7 +53,6 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
       // Add the "show" class to DIV
         x.className = "show";
-        console.log("Hey from outside!");
 
         // After 3 seconds, remove the show class from DIV
 
@@ -64,6 +63,14 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
         // }, 3000);
 
     }();
+
+    $scope.flyoutPanel1DonateButton = function() {
+      console.log("Pressed donate button");
+    };
+
+    $scope.flyoutPanel1InfoButton = function() {
+      console.log("Pressed info button");
+    };
 
     // $scope.showTellYourFriendsToast = function() {
     //   var x = document.getElementById("tell-your-friends-toast")
