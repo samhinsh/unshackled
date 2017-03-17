@@ -10,7 +10,7 @@ unshackledApp.controller('TopBannerController', ['$scope', '$rootScope', '$timeo
 	      		templateUrl: 'components/top-banner/top-banner-popup/topBannerPopupTemplate.html',
 	      		controller: 'TopBannerPopupController'
     		}).then(function(clickedItem) {
-      			$scope.alert = clickedItem + ' clicked!';
+      			//$scope.alert = clickedItem + ' clicked!';
     		});
         }, 1000);
 
