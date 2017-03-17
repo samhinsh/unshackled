@@ -98,6 +98,19 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
     };
 
+    $scope.showTellYourFriendsToast = function() {
+      var x = document.getElementById("tell-your-friends-toast")
+
+      // Add the "show" class to DIV
+        x.className = "show";
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ 
+          x.className = x.className.replace("show", ""); 
+
+        }, 3000);
+    }
+
     $scope.flyoutPanel1DonateButton = function() {
       console.log("Pressed donate button");
       $scope.hideFlyoutPanel();
@@ -109,19 +122,6 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
       $scope.hideFlyoutPanel();
       $scope.showFlyoutLargePanel();
     };
-
-    // $scope.showTellYourFriendsToast = function() {
-    //   var x = document.getElementById("tell-your-friends-toast")
-
-    //   // Add the "show" class to DIV
-    //     x.className = "show";
-
-    //     // After 3 seconds, remove the show class from DIV
-    //     setTimeout(function(){ 
-    //       x.className = x.className.replace("show", ""); 
-
-    //     }, 3000);
-    // }
 
 
   }]);
