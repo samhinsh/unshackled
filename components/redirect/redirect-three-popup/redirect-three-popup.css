@@ -2,20 +2,20 @@
     background-image: url("../../../assets/redirect-three-popup-background.png");
     background-size: 100%;
     background-repeat: no;
-    height: 485px;
+    height: 575px;
     bottom: 0px;
 }
 
 .redirect-three-popup-visit-button {
 	position: absolute;
-	bottom: 50px;
+	bottom: 150px;
 	left: 500px;
 	width: 336px;
 }
 
 .redirect-three-popup-donate-button {
 	position: absolute;
-	bottom: 50px;
+	bottom: 150px;
 	right: 200px;
 	width: 336px;
 	background-color: black;
