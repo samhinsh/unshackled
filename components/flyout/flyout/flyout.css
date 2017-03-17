@@ -8,6 +8,7 @@
     /*bottom: 0px;*/
 /*}*/
 
+
 .flyout-panel1-donate-button {
     position: absolute;
     top: 570px;
@@ -38,7 +39,7 @@
 }
 
 .more-info-donate {
-    right: 520px;
+    right: 523px;
     width: 292px;
     top: 525px;
     height: 52px;
@@ -46,7 +47,7 @@
 }
 
 .more-info-petition {
-    right: 170px;
+    right: 173px;
     width: 292px;
     height: 52px;
     top: 525px;
