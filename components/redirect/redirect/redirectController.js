@@ -184,6 +184,12 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
         
     };
 
+    $scope.moreInfo = function() {
+      $scope.showFlyoutLargePanel();
+      var toast = document.getElementById("donate-please-toast");
+      toast.className = toast.className.replace("show", "");
+    }
+
     $scope.removeDonatePleaseToast = function() {
 
     }
