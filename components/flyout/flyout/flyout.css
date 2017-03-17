@@ -75,10 +75,10 @@
 #text-money {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
-    right: 120px; /* Center the snackbar */
+    right: 70px; /* Center the snackbar */
     top: 240px; /* 30px from the bottom */
     height: 45px;
-    width: 250px;
+    width: 350px;
     font-size: 34.5px;
     text-align: center;
 }
@@ -86,10 +86,10 @@
 #cardName {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
-    right: 120px; /* Center the snackbar */
+    right: 70px; /* Center the snackbar */
     top: 340px; /* 30px from the bottom */
     height: 30px;
-    width: 250px;
+    width: 350px;
     font-size: 26px;
     text-align: left;
 }
@@ -97,10 +97,10 @@
 #creditCard {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
-    right: 120px; /* Center the snackbar */
+    right: 70px; /* Center the snackbar */
     top: 390px; /* 30px from the bottom */
     height: 30px;
-    width: 250px;
+    width: 350px;
     font-size: 26px;
     text-align: left;
 }
@@ -108,10 +108,10 @@
 #expiration {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
-    right: 120px; /* Center the snackbar */
+    right: 70px; /* Center the snackbar */
     top: 440px; /* 30px from the bottom */
     height: 30px;
-    width: 250px;
+    width: 350px;
     font-size: 26px;
     text-align: left;
 }

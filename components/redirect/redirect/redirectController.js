@@ -3,6 +3,39 @@
 unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$location', '$timeout', '$mdBottomSheet', '$mdToast',
   function ($scope, $rootScope, $location, $timeout, $mdBottomSheet, $mdToast) {
 
+   $scope.showFlyoutButton = function() {
+      var flyoutButton = document.getElementById("flyout-button");
+      flyoutButton.className = "show";
+    };
+
+    $scope.hideFlyoutButton = function() {
+      var flyoutButton = document.getElementById("flyout-button");
+      flyoutButton.className = flyoutButton.className.replace("show", "");
+    };
+
+    $scope.flyoutMoreInfoPanelPetitionButton = function() {
+      console.log("Pressed more info's petition button");
+      $scope.hideFlyoutLargePanel();
+      $scope.showFlyoutButton();
+    };
+
+    $scope.showFlyoutLargePanel = function() {
+      var flyoutLarge = document.getElementById("flyout-large-popup");
+      flyoutLarge.className = "show";
+
+    };
+
+    $scope.hideFlyoutLargePanel = function() {
+      var flyoutLarge = document.getElementById("flyout-large-popup");
+      flyoutLarge.className = flyoutLarge.className.replace("show", "");
+    };
+   
+    $scope.flyoutMoreInfoPanelDonateButton = function() {
+      console.log("Pressed more info's donate button");
+      $scope.hideFlyoutLargePanel();
+      $scope.showFlyoutGivePanel();
+    };
+
     $scope.showFlyoutGivePanel = function() {
       var flyoutGive = document.getElementById("flyout-panel-give");
       flyoutGive.className = "show";
@@ -21,15 +54,70 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
 
         setTimeout(function(){ 
         x.className = x.className.replace("show", "");
-        // $scope.showFlyoutButton();
+        $scope.showFlyoutButton();
       }, 3000);
     };
+
+<<<<<<< HEAD
+    $scope.showFlyoutPanel = function() {
+      var flyout = document.getElementById("flyout-panel1");
+      flyout.className = "show";
+
+    };
+
+    $scope.hideFlyoutPanel = function() {
+      var flyout = document.getElementById("flyout-panel1");
+      flyout.className = flyout.className.replace("show", ""); 
+=======
+    $scope.donateDonate = function() {
+      var toast = document.getElementById("donate-please-toast");
+      toast.className = toast.className.replace("show", "");
+      $scope.showFlyoutGivePanel();
+    }
 
     $scope.hideFlyoutGivePanel = function() {
       var flyoutGive = document.getElementById("flyout-panel-give");
       flyoutGive.className = flyoutGive.className.replace("show", "");
+>>>>>>> origin/master
 
     };
+
+    $scope.flyoutPanel1DonateButton = function() {
+      console.log("Pressed donate button");
+      $scope.hideFlyoutPanel();
+      $scope.showFlyoutGivePanel();
+    };
+
+    $scope.flyoutPanel1InfoButton = function() {
+      console.log("Pressed info button");
+      $scope.hideFlyoutPanel();
+      $scope.showFlyoutLargePanel();
+    };
+
+    $scope.flyoutPanelDonateButton2 = function() {
+      console.log("Pressed give's donate button");
+      $scope.hideFlyoutGivePanel();
+      $scope.showTellYourFriendsToast();
+    };
+
+    $scope.flyoutMoreInfoPanelDonateButton = function() {
+      console.log("Pressed more info's donate button");
+      $scope.hideFlyoutLargePanel();
+      $scope.showFlyoutGivePanel();
+    };
+
+    $scope.flyoutMoreInfoPanelPetitionButton = function() {
+      console.log("Pressed more info's petition button");
+      $scope.hideFlyoutLargePanel();
+      $scope.showFlyoutButton();
+    };
+
+    $scope.flyoutButton = function() {
+      console.log("Pressed the show-flyout button");
+      $scope.showFlyoutPanel();
+      $scope.hideFlyoutButton();
+    };
+
 
     $scope.flyoutPanelDonateButton2 = function() {
       console.log("Pressed give's donate button");
@@ -82,7 +170,7 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
             if (action === 'visit-winco') {
               $location.path('/donate-cart');
             } else if (action === 'donate') {
-
+              $scope.showFlyoutGivePanel();
             }
         });
         }, 1000);
