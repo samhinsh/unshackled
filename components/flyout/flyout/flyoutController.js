@@ -19,10 +19,7 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
     $scope.hideFlyoutGivePanel = function() {
 
       var flyoutGive = document.getElementById("flyout-panel-give")
-
-      setTimeout(function(){ 
-        flyoutGive.className = flyoutGive.className.replace("show", "");
-      }, 500);
+      flyoutGive.className = flyoutGive.className.replace("show", "");
 
     };
 
