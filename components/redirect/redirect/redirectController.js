@@ -117,13 +117,6 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
       $scope.hideFlyoutButton();
     };
 
-
-    $scope.flyoutPanelDonateButton2 = function() {
-      console.log("Pressed give's donate button");
-      $scope.hideFlyoutGivePanel();
-      $scope.showTellYourFriendsToast();
-    };
-
   	$scope.showPopup = function() {
     	$scope.alert = '';
     	var wait = $timeout(function() {
