@@ -110,6 +110,10 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
       $scope.showFlyoutLargePanel();
     };
 
+    $scope.flyoutPanelDonateButton2 = function() {
+      console.log("Pressed give's donate button");
+    };
+
     // $scope.showTellYourFriendsToast = function() {
     //   var x = document.getElementById("tell-your-friends-toast")
 
