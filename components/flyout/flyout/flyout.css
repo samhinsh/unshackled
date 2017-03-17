@@ -1,0 +1,79 @@
+/*
+.donate-cart-toast-bg {
+    
+    background-size: 100%;
+    background-repeat: no;
+    height: 75px;
+    width: 500px;
+    /*bottom: 0px;*/
+/*}*/
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#flyout-panel1 {
+    background-image: url("../../../assets/flyout-popup.png");
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 436px; /* Set a default minimum width */
+    min-height: 682px;
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    right: 30px; /* Center the snackbar */
+    top: 0px; /* 30px from the bottom */
+}
+
+#flyout-panel-give {
+    background-image: url("../../../assets/flyout-give-popup.png");
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 436px; /* Set a default minimum width */
+    min-height: 682px;
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    right: 30px; /* Center the snackbar */
+    top: 0px; /* 30px from the bottom */
+}
+
+#flyout-large-popup {
+    background-image: url("../../../assets/Flyout-Panel-More-Info.png");
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 1054px; /* Set a default minimum width */
+    min-height: 637px;
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    right: 30px; /* Center the snackbar */
+    top: 0px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#flyout-panel1.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+}
+
+#flyout-panel-give.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+}
+
+#flyout-large-popup.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+}
+
+/* Animations to fade the snackbar in and out */
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 5px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {top: 5px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}

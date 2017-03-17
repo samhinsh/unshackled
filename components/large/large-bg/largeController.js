@@ -10,7 +10,7 @@ unshackledApp.controller('LargeController', ['$scope', '$rootScope', '$timeout',
 	      		templateUrl: 'components/large/large-popup/largePopupTemplate.html',
 	      		controller: 'LargePopupController'
     		}).then(function(clickedItem) {
-      			$scope.alert = clickedItem + ' clicked!';
+      			//$scope.alert = clickedItem + ' clicked!';
     		});
         }, 1000);
 

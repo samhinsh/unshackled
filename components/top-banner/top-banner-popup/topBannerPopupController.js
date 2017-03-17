@@ -1,10 +1,10 @@
 'use strict'
 
-unshackledApp.controller('TopBannerPopupController', function($scope, $mdDialog) {
+unshackledApp.controller('TopBannerPopupController', function($scope, $mdDialog, $window) {
 
-   $scope.yesButtonClick = function() {
-      // var clickedItem = $scope.items[$index];
+   $scope.topDonateButtonClick = function() {
       $mdDialog.hide('clickedItem');
+      $window.location.href = '/#/flyout-give';
   };
 
 })
