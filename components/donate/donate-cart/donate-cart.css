@@ -7,6 +7,31 @@
     /*bottom: 0px;*/
 }
 
+.facebook-logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 170px;
+}
+
+.twitter-logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 250px;
+
+}
+
+.instagram-logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 330px;
+}
+
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #winco-is-good-toast {
     background-image: url("../../../assets/winco-is-good.png");
@@ -17,6 +42,25 @@
     z-index: 1; /* Add a z-index if needed */
     right: 30px; /* Center the snackbar */
     top: 30px; /* 30px from the bottom */
+}
+
+.donate-cart-donate-button {
+    position: absolute;
+    height: 40px;
+    width: 110px;
+    font-size: 18px; 
+    bottom: 10px;
+    left: 150px;
+}
+
+.donate-cart-more-info-button {
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    font-size: 18px; 
+    bottom: 10px;
+    right: 90px;
+    background-color: black;
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */

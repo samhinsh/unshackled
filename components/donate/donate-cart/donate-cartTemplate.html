@@ -1,9 +1,26 @@
 <div class="fullscreen">
 	<div id="winco-is-good-toast" class="toast"></div>
-	<div id="donate-please-toast" class="toast"></div>
-	<div id="tell-your-friends-toast" class="toast"></div>
+	<div id="donate-please-toast" class="toast">
+		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3A9URHKC8XYWS" target="_blank">
+		<button class="unshackled-button donate-cart-donate-button" ng-click="buttonClick()">Donate</button>
+ 		</a>
+ 		<a href="https://www.theatlantic.com/business/archive/2015/09/prison-labor-in-america/406177/" target="_blank">
+ 			<button class="unshackled-button donate-cart-more-info-button" ng-click="buttonClick()">More Info</button>
+ 		</a>
+	</div>
+	<div id="tell-your-friends-toast" class="toast">
+		<a href="http://www.facebook.com/share.php?u=https://www.theatlantic.com/business/archive/2015/09/prison-labor-in-america/406177/" target="_blank">
+			<img src="../../../assets/facebook-logo.png" class='facebook-logo'> </img>
+		</a>
+		<a href="https://ctt.ec/7qIu8" target="_blank">
+			<img src="../../../assets/twitter-logo.png" class='twitter-logo'> </img>
+		</a>
+		<a href="https://www.instagram.com" target="_blank">
+			<img src="../../../assets/instagram-logo.png" class='instagram-logo'> </img>
+		</a>
+	</div>
 	<iframe class="fullscreen" src="https://www.walmart.com/"></iframe>
-	  <div ng-if="alert">
+	<div ng-if="alert">
 	    <br/>
 	    <b layout="row" layout-align="center center" class="md-padding">
 	      {{alert}}
