@@ -1,0 +1,82 @@
+.donate-cart-toast-bg {
+    
+    background-size: 100%;
+    background-repeat: no;
+    height: 75px;
+    width: 500px;
+    /*bottom: 0px;*/
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#winco-is-good-toast {
+    background-image: url("../../../assets/winco-is-good.png");
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 493px; /* Set a default minimum width */
+    min-height: 174px;
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    right: 30px; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#winco-is-good-toast.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#donate-please-toast {
+    background-image: url("../../../assets/donate-after-shopping.png");
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 493px; /* Set a default minimum width */
+    min-height: 174px;
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    right: 30px; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#donate-please-toast.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#tell-your-friends-toast {
+    background-image: url("../../../assets/social-prompt.png");
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 493px; /* Set a default minimum width */
+    min-height: 174px;
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    right: 30px; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#tell-your-friends-toast.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+}
+
+/* Animations to fade the snackbar in and out */
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}

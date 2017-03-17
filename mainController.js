@@ -37,6 +37,10 @@ unshackledApp.config(['$routeProvider',
             templateUrl: 'components/flyout/flyout-give/flyoutGiveTemplate.html',
             controller: 'FlyoutGiveController'
         }).
+        when('/donate-cart', {
+            templateUrl: 'components/donate/donate-cart/donate-cartTemplate.html',
+            controller: 'DonateCartController'
+        }).
         otherwise({
             redirectTo: '/redirect'
         });
