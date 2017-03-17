@@ -7,9 +7,9 @@ unshackledApp.controller('LargePopupController', function($scope, $mdDialog, $wi
       $window.location.href = '/#/flyout-give';
    };
 
-   $scope.largePetitionButtonClick = function() {
+   $scope.largeLeaveButtonClick = function() {
       $mdDialog.hide('clickedItem');
-      $window.location.href = '/#/flyout-give';
+      $window.location.href = 'http://wincofoods.com/';
    };
 
 })
