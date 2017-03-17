@@ -2,7 +2,7 @@
 
 unshackledApp.controller('TopBannerPopupController', function($scope, $mdDialog) {
 
-   $scope.yesButtonClick = function() {
+   $scope.buttonClick = function() {
       // var clickedItem = $scope.items[$index];
       $mdDialog.hide('clickedItem');
   };

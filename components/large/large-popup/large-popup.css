@@ -5,3 +5,27 @@
     height: 54%;
     width: 50%;
 }
+
+.large-popup-button {
+	width: 190px;
+	height: 35px;
+	color: white;
+	background-color: #9B1725;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	font-family: 'nexa_boldregular';
+    font-size: 12px;
+	border-radius: 19px;
+}
+
+.large-popup-yes-button {
+	position: absolute;
+	top: 87%;
+	right: 50%;
+}
+
+.large-popup-no-button {
+	position: absolute;
+	top: 87%;
+	right: 17%;
+	background-color: black;
+}
