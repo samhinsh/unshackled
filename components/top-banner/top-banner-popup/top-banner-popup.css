@@ -7,13 +7,13 @@
 }
 
 .top-banner-button {
-	width: 130px;
-	height: 40px;
+	width: 180px;
+	height: 45px;
 	color: white;
 	background-color: #9B1725;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 	font-family: 'nexa_boldregular';
-    font-size: 14px;
+    font-size: 24px;
 	border-radius: 19px;
 }
 
