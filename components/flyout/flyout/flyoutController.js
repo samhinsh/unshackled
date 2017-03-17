@@ -4,62 +4,25 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
   function ($scope, $rootScope, $location, $timeout, $mdBottomSheet, $mdToast) {
 
 
-  	// $scope.showPopup = function() {
-   //  	$scope.alert = '';
-   //  	var wait = $timeout(function() {
-   //          $mdBottomSheet.show({
-	  //     		templateUrl: 'components/flyout/flyout-popup/flyoutPopupTemplate.html',
-	  //     		controller: 'FlyoutPopupController'
-   //  		}).then(function(clickedItem) {
-   //    			//$location.path('/redirect-two');
-   //  		});
-   //    }, 1000);
-
-  	// }();
-
     $scope.showFlyoutLargePanel = function() {
       var flyoutLarge = document.getElementById("flyout-large-popup")
+      flyoutLarge.className = "show";
 
-      // Add the "show" class to DIV
-        flyoutLarge.className = "show";
-
-        // After 3 seconds, remove the show class from DIV
-        // setTimeout(function(){ 
-        //   x.className = x.className.replace("show", ""); 
-        //   $scope.showTellYourFriendsToast();
-
-        // }, 3000); 
     };
 
 
     $scope.showFlyoutGivePanel = function() {
       var flyoutGive = document.getElementById("flyout-panel-give")
-
-      // Add the "show" class to DIV
-        flyoutGive.className = "show";
-
-        // After 3 seconds, remove the show class from DIV
-        // setTimeout(function(){ 
-        //   x.className = x.className.replace("show", ""); 
-        //   $scope.showTellYourFriendsToast();
-
-        // }, 3000); 
+      flyoutGive.className = "show";
     };
 
     $scope.hideFlyoutGivePanel = function() {
 
       var flyoutGive = document.getElementById("flyout-panel-give")
 
-      // Add the "show" class to DIV
-       
-
-        // After 3 seconds, remove the show class from DIV
-
-        setTimeout(function(){ 
-          flyoutGive.className = flyoutGive.className.replace("show", "");
-          // $scope.showDonatePleaseToast();
-
-        }, 500);
+      setTimeout(function(){ 
+        flyoutGive.className = flyoutGive.className.replace("show", "");
+      }, 500);
 
     };
 
@@ -68,16 +31,7 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
       var flyout = document.getElementById("flyout-panel1")
 
-      // Add the "show" class to DIV
         flyout.className = "show";
-
-        // After 3 seconds, remove the show class from DIV
-
-        // setTimeout(function(){ 
-        //   x.className = x.className.replace("show", ""); 
-        //   // $scope.showDonatePleaseToast();
-
-        // }, 3000);
 
     }();
 
@@ -85,26 +39,15 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
       var flyout = document.getElementById("flyout-panel1")
 
-      // Add the "show" class to DIV
       flyout.className = flyout.className.replace("show", ""); 
-
-        // After 3 seconds, remove the show class from DIV
-
-        // setTimeout(function(){ 
-        //   x.className = x.className.replace("show", ""); 
-        //   // $scope.showDonatePleaseToast();
-
-        // }, 3000);
 
     };
 
     $scope.showTellYourFriendsToast = function() {
       var x = document.getElementById("tell-your-friends-toast")
 
-      // Add the "show" class to DIV
         x.className = "show";
 
-        // After 3 seconds, remove the show class from DIV
         setTimeout(function(){ 
           x.className = x.className.replace("show", ""); 
 
@@ -128,7 +71,6 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
       $scope.hideFlyoutGivePanel();
       $scope.showTellYourFriendsToast();
     };
-
 
 
   }]);
