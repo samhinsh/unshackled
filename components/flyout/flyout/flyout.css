@@ -8,6 +8,31 @@
     /*bottom: 0px;*/
 /*}*/
 
+.flyout-panel1-donate-button {
+    position: absolute;
+    top: 570px;
+    right: 230px;
+    background-color: #9D1725;
+}
+
+.flyout-panel1-info-button {
+    position: absolute;
+    top: 570px;
+    right: 50px;
+    background-color: black;
+}
+
+.flyout-size {
+    height: 52px;
+    width: 156px;
+    font-size: 27px;
+}
+
+.smaller {
+    font-size: 24px;
+}
+
+
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #flyout-panel1 {
     background-image: url("../../../assets/flyout-popup.png");
