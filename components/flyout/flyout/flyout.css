@@ -69,7 +69,7 @@
 
     visibility: visible; /* Show the snackbar */
 
-    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+    animation: fadein 0.5s;
 }
 
 #text-money {
@@ -181,7 +181,7 @@
 
 /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
 However, delay the fade out process for 2.5 seconds */
-    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+    animation: fadein 0.5s;
 }
 
 #flyout-panel-give.show {
@@ -189,7 +189,7 @@ However, delay the fade out process for 2.5 seconds */
 
 /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
 However, delay the fade out process for 2.5 seconds */
-    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+    animation: fadein 0.5s;
 }
 
 #flyout-large-popup.show {
@@ -197,7 +197,8 @@ However, delay the fade out process for 2.5 seconds */
 
 /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
 However, delay the fade out process for 2.5 seconds */
-    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+    /*animation: fadein 0.5s, fadeout 0.5s 2.6s;*/
+    animation: fadein 0.5s;
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
