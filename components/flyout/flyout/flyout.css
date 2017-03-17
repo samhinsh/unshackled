@@ -118,8 +118,9 @@
 
 #flyout-large-popup {
     background-image: url("../../../assets/Flyout-Panel-More-Info.png");
+    background-size: contain;
     visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 1054px; /* Set a default minimum width */
+    min-width: 1030px; /* Set a default minimum width */
     min-height: 637px;
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
