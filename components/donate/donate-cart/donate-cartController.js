@@ -13,7 +13,7 @@ unshackledApp.controller('DonateCartController', ['$scope', '$rootScope', '$loca
     		// After 3 seconds, remove the show class from DIV
     		setTimeout(function(){ 
     			x.className = x.className.replace("show", ""); 
-    			$scope.showDonatePleaseToast();
+    			// $scope.showDonatePleaseToast();
 
     		}, 3000);
 
