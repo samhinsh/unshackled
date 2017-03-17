@@ -18,4 +18,3 @@ unshackledApp.controller('FlyoutGiveController', ['$scope', '$rootScope', '$time
   }]);
 
 
-
