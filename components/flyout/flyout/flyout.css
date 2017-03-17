@@ -53,6 +53,14 @@
     font-size: 24px;
 }
 
+.flyout-button {
+    top: 0px;
+    right: 0px;
+    height: 42px;
+    width: 46px;
+    background-color: black;
+}
+
 #text-money {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */

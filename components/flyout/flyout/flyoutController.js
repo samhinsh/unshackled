@@ -32,6 +32,11 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
       var flyout = document.getElementById("flyout-panel1");
       flyout.className = "show";
 
+    };
+
+    $scope.showFlyoutButton = function() {
+      var flyoutButton = document.getElementById("flyout-button");
+      flyoutButton.className = "show";
     }();
 
     $scope.hideFlyoutPanel = function() {
