@@ -18,10 +18,10 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
   	// }();
 
     $scope.showFlyoutLargePanel = function() {
-      var x = document.getElementById("flyout-large-popup")
+      var flyoutLarge = document.getElementById("flyout-large-popup")
 
       // Add the "show" class to DIV
-        x.className = "show";
+        flyoutLarge.className = "show";
 
         // After 3 seconds, remove the show class from DIV
         // setTimeout(function(){ 
@@ -33,10 +33,10 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
 
     $scope.showFlyoutGivePanel = function() {
-      var x = document.getElementById("flyout-panel-give")
+      var flyoutGive = document.getElementById("flyout-panel-give")
 
       // Add the "show" class to DIV
-        x.className = "show";
+        flyoutGive.className = "show";
 
         // After 3 seconds, remove the show class from DIV
         // setTimeout(function(){ 
@@ -46,13 +46,30 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
         // }, 3000); 
     };
 
+    $scope.hideFlyoutGivePanel = function() {
+
+      var flyoutGive = document.getElementById("flyout-panel-give")
+
+      // Add the "show" class to DIV
+      flyoutGive.className = flyoutGive.className.replace("show", ""); 
+
+        // After 3 seconds, remove the show class from DIV
+
+        // setTimeout(function(){ 
+        //   x.className = x.className.replace("show", ""); 
+        //   // $scope.showDonatePleaseToast();
+
+        // }, 3000);
+
+    };
+
 
     $scope.showFlyoutPanel = function() {
 
-      var x = document.getElementById("flyout-panel1")
+      var flyout = document.getElementById("flyout-panel1")
 
       // Add the "show" class to DIV
-        x.className = "show";
+        flyout.className = "show";
 
         // After 3 seconds, remove the show class from DIV
 
@@ -64,12 +81,33 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
     }();
 
+    $scope.hideFlyoutPanel = function() {
+
+      var flyout = document.getElementById("flyout-panel1")
+
+      // Add the "show" class to DIV
+      flyout.className = flyout.className.replace("show", ""); 
+
+        // After 3 seconds, remove the show class from DIV
+
+        // setTimeout(function(){ 
+        //   x.className = x.className.replace("show", ""); 
+        //   // $scope.showDonatePleaseToast();
+
+        // }, 3000);
+
+    };
+
     $scope.flyoutPanel1DonateButton = function() {
       console.log("Pressed donate button");
+      $scope.hideFlyoutPanel();
+      $scope.showFlyoutGivePanel();
     };
 
     $scope.flyoutPanel1InfoButton = function() {
       console.log("Pressed info button");
+      $scope.hideFlyoutPanel();
+      $scope.showFlyoutLargePanel();
     };
 
     // $scope.showTellYourFriendsToast = function() {
