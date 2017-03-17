@@ -3,6 +3,10 @@
 	height: 100%;
 }
 
+button {
+  outline: none;
+}
+
 .unshackled-button {
 	width: 236px;
 	height: 66px;
