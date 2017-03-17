@@ -51,15 +51,15 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
       var flyoutGive = document.getElementById("flyout-panel-give")
 
       // Add the "show" class to DIV
-      flyoutGive.className = flyoutGive.className.replace("show", ""); 
+       
 
         // After 3 seconds, remove the show class from DIV
 
-        // setTimeout(function(){ 
-        //   x.className = x.className.replace("show", ""); 
-        //   // $scope.showDonatePleaseToast();
+        setTimeout(function(){ 
+          flyoutGive.className = flyoutGive.className.replace("show", "");
+          // $scope.showDonatePleaseToast();
 
-        // }, 3000);
+        }, 500);
 
     };
 
@@ -112,6 +112,7 @@ unshackledApp.controller('FlyoutController', ['$scope', '$rootScope', '$location
 
     $scope.flyoutPanelDonateButton2 = function() {
       console.log("Pressed give's donate button");
+      $scope.hideFlyoutGivePanel();
     };
 
     // $scope.showTellYourFriendsToast = function() {
