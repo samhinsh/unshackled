@@ -61,6 +61,17 @@
     background-color: black;
 }
 
+#flyout-button {
+    visibility: hidden;
+}
+
+#flyout-button.show {
+
+    visibility: visible; /* Show the snackbar */
+
+    animation: fadein 0.5s, fadeout 0.5s 2.6s;
+}
+
 #text-money {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
