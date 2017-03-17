@@ -1,7 +1,7 @@
 'use strict';
 
-unshackledApp.controller('DonateCartController', ['$scope', '$rootScope', '$location', '$timeout', '$mdToast',
-	function ($scope, $rootScope, $location, $timeout, $mdToast) {
+unshackledApp.controller('DonateCartController', ['$scope', '$rootScope', '$window', '$location', '$timeout', '$mdToast',
+	function ($scope, $rootScope, $window, $location, $timeout, $mdToast) {
 
 		$scope.showWincoIsGoodToast = function() {
 
@@ -19,6 +19,13 @@ unshackledApp.controller('DonateCartController', ['$scope', '$rootScope', '$loca
 
 		}();
 
+		$scope.buttonClick = function() {
+			console.log('yes, still registers');
+			var win = $window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3A9URHKC8XYWS', '_blank');
+  			win.focus();
+  			$scope.showTellYourFriendsToast();
+		}
+
 		$scope.showDonatePleaseToast = function() {
 			var x = document.getElementById("donate-please-toast")
 
@@ -28,6 +35,7 @@ unshackledApp.controller('DonateCartController', ['$scope', '$rootScope', '$loca
     		// After 3 seconds, remove the show class from DIV
     		setTimeout(function(){ 
     			x.className = x.className.replace("show", ""); 
+    			console.log('here');
     			$scope.showTellYourFriendsToast();
 
     		}, 3000);	
