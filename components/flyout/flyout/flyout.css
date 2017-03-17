@@ -37,6 +37,22 @@
     left: 140px;
 }
 
+.more-info-donate {
+    right: 520px;
+    width: 292px;
+    top: 525px;
+    height: 52px;
+    font-size: 21.5px;
+}
+
+.more-info-petition {
+    right: 170px;
+    width: 292px;
+    height: 52px;
+    top: 525px;
+    font-size: 24px;
+}
+
 #text-money {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
