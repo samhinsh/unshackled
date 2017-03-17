@@ -1,5 +1,13 @@
 <div class="redirect-one fullscreen">
 
+    <div id="flyout-button" class="toast">
+		<button class="unshackled-button flyout-panel1-donate-button flyout-size flyout-button" ng-click="flyoutButton()">💡</button>
+	</div>
+
+    <div id="flyout-panel1" class="toast">
+    	<button class="unshackled-button flyout-panel1-donate-button flyout-size" ng-click="flyoutPanel1DonateButton()">Donate</button>
+    	<button class="unshackled-button flyout-panel1-info-button flyout-size smaller" ng-click="flyoutPanel1InfoButton()">More Info</button>
+    </div>
 
 	<div id="flyout-panel-give" class="toast">
     	<input type="text" name="" id="text-money" class="money" placeholder="Amount - $100">
@@ -9,7 +17,26 @@
     	<input type="text" name="" id="cvv" class="money" placeholder="CVV">
     	<button class="unshackled-button flyout-panel1-donate-button flyout-size bottom" ng-click="flyoutPanelDonateButton2()">Donate</button>
     </div>
-    
+
+    <div id="flyout-large-popup" class="toast">
+    	<button class="unshackled-button flyout-panel1-donate-button more-info-donate" ng-click="flyoutMoreInfoPanelDonateButton()">Donate to Prisoner Relief</button>
+    	<a href="https://www.change.org/p/friends-and-family-of-prisoners-solidarity-with-sept-9-2016-nationally-coordinated-prisoner-workstoppage?source_location=topic_page" target="_blank">
+    		<button class="unshackled-button flyout-panel1-info-button more-info-petition" ng-click="flyoutMoreInfoPanelPetitionButton()">Petition Walmart</button>
+    	</a>
+    </div>
+
+    <div id="tell-your-friends-toast" class="toast">
+		<a href="http://www.facebook.com/share.php?u=https://www.theatlantic.com/business/archive/2015/09/prison-labor-in-america/406177/" target="_blank">
+			<img src="../../../assets/facebook-logo.png" class='facebook-logo'> </img>
+		</a>
+		<a href="https://ctt.ec/7qIu8" target="_blank">
+			<img src="../../../assets/twitter-logo.png" class='twitter-logo'> </img>
+		</a>
+		<a href="https://www.instagram.com" target="_blank">
+			<img src="../../../assets/instagram-logo.png" class='instagram-logo'> </img>
+		</a>
+	</div>
+
 	<iframe class="fullscreen" src="https://www.walmart.com/"></iframe>
 	  <div ng-if="alert">
 	    <br/>
