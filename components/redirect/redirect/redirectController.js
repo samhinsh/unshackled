@@ -25,6 +25,12 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
       }, 3000);
     };
 
+    $scope.donateDonate = function() {
+      var toast = document.getElementById("donate-please-toast");
+      toast.className = toast.className.replace("show", "");
+      $scope.showFlyoutGivePanel();
+    }
+
     $scope.hideFlyoutGivePanel = function() {
       var flyoutGive = document.getElementById("flyout-panel-give");
       flyoutGive.className = flyoutGive.className.replace("show", "");
@@ -82,7 +88,7 @@ unshackledApp.controller('RedirectController', ['$scope', '$rootScope', '$locati
             if (action === 'visit-winco') {
               $location.path('/donate-cart');
             } else if (action === 'donate') {
-
+              $scope.showFlyoutGivePanel();
             }
         });
         }, 1000);
